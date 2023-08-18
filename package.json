@@ -1,0 +1,32 @@
+{
+    "name": "node-silk-encode",
+    "description": "silk (tencent) encode",
+    "version": "0.0.4",
+    "main": "lib/index.cjs",
+    "typings": "lib/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/idanran/node-silk-encode.git"
+    },
+    "author": "idanran <idanran@outlook.com>",
+    "license": "MIT",
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "compile:cjs": "esbuild src/index.ts --outfile=lib/index.cjs --bundle --sourcemap --platform=node --target=es2022",
+        "build": "yarn compile:cjs && yarn dtsc"
+    },
+    "keywords": [
+        "silk",
+        "tencent",
+        "encode",
+        "silk-sdk"
+    ],
+    "devDependencies": {
+        "@types/node": "^20.5.0",
+        "dtsc": "^2.3.0",
+        "esbuild": "^0.19.2",
+        "typescript": "^5.1.6"
+    }
+}
