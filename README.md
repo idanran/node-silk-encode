@@ -1,13 +1,13 @@
 # Node Silk Encode
 
+[![npm](https://img.shields.io/npm/v/node-silk-encode?style=flat-square)](https://www.npmjs.com/package/node-silk-encode)
+
 ## API
 ```ts
-function encode(input: string, output: string): Promise<number>
+function encode(input: string, output: string, samplingRate: string = '44100'): Promise<string>
 ```
 
-input 和 output 为文件地址，返回值为音频时长。
-
-input 要求：PCM 44100Hz
+input 和 output 为文件地址，samplingRate 为采样率。
 
 ## Build
 
