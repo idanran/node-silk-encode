@@ -9,16 +9,12 @@ input 和 output 为文件地址，返回值为音频时长。
 
 input 要求：PCM 44100Hz
 
-## Build py binding
+## Build
+
 ```
-pip install pipenv
-
-cd py
-pipenv install
-pipenv shell
-
-pip install pilk
-pip install pyinstaller
-
-pyinstaller -F cli.py
+yarn build
 ```
+然后把编码器 (silk_codec-windows-static-x64.exe) 放入 lib 目录。
+
+## Other
+编码器来自 https://github.com/KasukuSakura/silk-codec/releases
