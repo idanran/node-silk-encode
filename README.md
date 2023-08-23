@@ -4,7 +4,7 @@
 
 ## API
 ```ts
-function encode(input: string, output: string, samplingRate: string = '44100'): Promise<string>
+function encode(input: string, output: string, samplingRate: string): Promise<void>
 ```
 
 input 和 output 为文件地址，samplingRate 为采样率。
@@ -14,7 +14,10 @@ input 和 output 为文件地址，samplingRate 为采样率。
 ```
 yarn build
 ```
-然后把编码器 (silk_codec-windows-static-x64.exe) 放入 lib 目录。
+然后把编码器 (cli.exe) 放入 lib 目录。
 
-## Other
-编码器来自 https://github.com/KasukuSakura/silk-codec/releases
+## Build `cli.exe`
+```
+cd rs
+cargo build --release
+```
