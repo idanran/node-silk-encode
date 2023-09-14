@@ -20,6 +20,6 @@ struct Opt {
 fn main() {
     let opt = Opt::parse();
     let input = std::fs::read(opt.input).unwrap();
-    let output = encode_silk(input, opt.sample_rate, opt.sample_rate, true).unwrap();
-    std::fs::write(opt.output, output).unwrap();
+    let output = encode_silk(input, opt.sample_rate, 25000, true).unwrap();
+    std::fs::write(opt.output, &output[0..output.len() - 1]).unwrap();
 }
