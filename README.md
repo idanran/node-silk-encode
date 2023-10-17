@@ -7,7 +7,7 @@
 function encode(input: string, output: string, samplingRate: string): Promise<void>
 ```
 
-input 和 output 为文件地址，samplingRate 为采样率。
+input 和 output 为文件地址，samplingRate 为采样率。input 需为 pcm 文件。 
 
 ## Build
 
