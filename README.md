@@ -2,6 +2,8 @@
 
 [![npm](https://img.shields.io/npm/v/node-silk-encode?style=flat-square)](https://www.npmjs.com/package/node-silk-encode)
 
+本项目已不再维护，请迁移至 [silk-wasm](https://github.com/idanran/silk-wasm)
+
 ## API
 ```ts
 function encode(input: string, output: string, samplingRate: string): Promise<void>
